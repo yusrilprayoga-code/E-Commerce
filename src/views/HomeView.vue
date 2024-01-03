@@ -1,6 +1,7 @@
 <template>
-  <div class="hero-section container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-slide="true">
+  
+   <div class="hero-section container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1800">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -53,14 +54,24 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <!-- Sponsors -->
+    <sponsor />
+
+    <!-- testimonials -->
+    <testimonials />
+
+    <!-- Features -->
     <features />
   </div>
 </template>
 
 <script lang="ts">
 import Features from '@/components/Features.vue';
+import Sponsor from '@/components/Sponsor.vue';
+import Testimonials from '@/components/Testimonials.vue';
 export default {
-  components: {  Features },
+  components: {  Features, Sponsor, Testimonials },
   name: "HomeView",
 };
 </script>

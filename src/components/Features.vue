@@ -2,14 +2,14 @@
   <div class="Features container">
     <h2 class="mt-5 text-center mb-5">Features</h2>
     <div class="row row-cols-md-4 mt-5">
-      <div class="col" v-for="(category, index) in categories" :key="index">
-        <button
-          type="button"
-          class="btn btn-outline-primary btn-lg btn-block rounded-pill category-button"
-          @click="selectCategory(category)"
-        >
-          {{ category }}
-        </button>
+      <div class="col mt-3" v-for="(category, index) in categories" :key="index">
+        <div class="card h-100 cardCategory" @click="selectCategory(category)" style="border-radius: 20px; cursor: pointer;">
+          <div class="card-body">
+            <h5 class="card-title">
+              {{ category }}
+            </h5>
+          </div>
+          </div>
       </div>
     </div>
     <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
@@ -18,7 +18,7 @@
       </div>
       <div v-if="error" class="error">{{ error }}</div>
       <div class="col mt-3" v-for="(feature, index) in filteredFeatures" :key="index">
-        <div class="card h-100 shadow" @click="cardRouter" style="border-radius: 20px;">
+        <div class="card h-100 cardFeature" @click="cardRouter" style="border-radius: 20px;">
           <img :src="feature.image" class="card-img-top" style="border-radius: 20px;" alt="Feature Image" />
           <div class="card-body">
             <h5 class="card-title">{{ feature.title.substring(0, 19) }}</h5>
@@ -83,7 +83,7 @@ export default {
     },
 
     cardRouter() {
-      this.$router.push({ name: "ProductView" });
+      this.$router.push({ name: "Products" });
     },
 
     selectCategory(category) {
@@ -101,5 +101,31 @@ export default {
 .card-img-top {
   height: 200px;
   object-fit: cover;
+}
+
+.cardCategory {
+  transition: all 0.3s ease-in-out;
+}
+
+.cardCategory .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.cardCategory:hover {
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardFeature {
+  transition: all 0.3s ease-in-out;
+}
+
+.cardFeature:hover {
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border:  1px solid #000000;
+  cursor: pointer;
 }
 </style>
