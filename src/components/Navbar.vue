@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bg-body-light navbar-light mt-3 mb-3">
     <div class="container">
       <router-link class="navbar-brand" to="/">
-        <span class="ms-2" style="font-weight: 600;">E-Commerce</span>
+        <span style="font-weight: 600;">E-Commerce</span>
       </router-link>
       <button
         class="navbar-toggler"
@@ -19,9 +19,6 @@
         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <router-link class="nav-link" to="/">Main Page</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/product">Product</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">About Us</router-link>

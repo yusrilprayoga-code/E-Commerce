@@ -1,6 +1,21 @@
 <template>
-    <div>
-        <h1>Footer</h1>
+    <div class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Footer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Footer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Footer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+        </div>
     </div>  
 </template>
 
@@ -17,5 +32,8 @@ export default {
 </script>
 
 <style>
-
+    .footer {
+        background-color: grey;
+        padding: 50px 0;
+    }
 </style>

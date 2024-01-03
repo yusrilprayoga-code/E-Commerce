@@ -53,16 +53,14 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <card-category />
     <features />
   </div>
 </template>
 
 <script lang="ts">
-import CardCategory from '@/components/CardCategory.vue';
 import Features from '@/components/Features.vue';
 export default {
-  components: { CardCategory, Features },
+  components: {  Features },
   name: "HomeView",
 };
 </script>
