@@ -2,7 +2,11 @@
   <nav class="navbar navbar-expand-lg bg-body-light navbar-light mt-3 mb-3">
     <div class="container">
       <router-link class="navbar-brand" to="/">
-        <span style="font-weight: 600">E-Commerce</span>
+        <img src="../assets/logo.png" 
+        alt="Logo"
+        style="width: 50px; height: 30px; object-fit: cover; align-items: center;"
+        />
+         <span style="font-weight: 600">E-Commerce</span>
       </router-link>
       <button
         class="navbar-toggler"
