@@ -48,13 +48,13 @@
       <div class="col-8 col-md-3 mt-3">
         <div class="card" style="border-radius: 20px; overflow: hidden">
           <div class="card-body">
-            <h5 class="card-title">Remote Work</h5>
             <img
-              src="../assets/images/learning3.png"
-              class="card-img-top"
-              alt="Learning"
-              style="width: 100px; height: 100px; object-fit: cover"
+            src="../assets/images/learning3.png"
+            class="card-img-top"
+            alt="Learning"
+            style="width: 100px; height: 100px; object-fit: cover"
             />
+            <h5 class="card-title">Remote Work</h5>
             <p class="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               voluptatum voluptates. Quisquam, voluptatum voluptates.

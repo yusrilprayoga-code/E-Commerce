@@ -101,6 +101,9 @@
 
     <!-- Features -->
     <features />
+
+    <!-- Our Team -->
+    <our-team />
   </div>
 </template>
 
@@ -108,8 +111,9 @@
 import Features from "@/components/Features.vue";
 import Sponsor from "@/components/Sponsor.vue";
 import Testimonials from "@/components/Testimonials.vue";
+import OurTeam from '@/components/OurTeam.vue';
 export default {
-  components: { Features, Sponsor, Testimonials },
+  components: { Features, Sponsor, Testimonials, OurTeam },
   name: "HomeView",
 };
 </script>
