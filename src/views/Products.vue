@@ -2,10 +2,10 @@
   <div class="products container">
     <h1 class="text-center mb-5">This is a products page</h1>
     <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
-      <div class="col mt-3" v-for="(product, index) in products" :key="index">
+      <div class="col mt-3" v-for="product in products" :key="product.id">
         <div
           class="card h-100 cardProduct"
-          @click="cardRouter"
+          @click="cardRouter(product.id)"
           style="
             border-radius: 20px;
             overflow: hidden;
@@ -47,9 +47,10 @@ export default {
   methods: {
     async getProducts() {
       try {
-        const response = await axios.get("https://dummyjson.com/products/");
+        const response = await axios.get("https://dummyjson.com/products");
         console.log(response.data);
-        this.products = response.data;
+        this.products = response.data.products;
+        this.products = this.products.slice(0, 20);
       } catch (error) {
         console.error(error);
       }

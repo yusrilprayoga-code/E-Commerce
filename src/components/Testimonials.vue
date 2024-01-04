@@ -14,7 +14,13 @@
       <div class="col-8 col-md-3">
         <div class="card" style="border-radius: 20px; overflow: hidden">
           <div class="card-body">
-            <h5 class="card-title">Testimoni</h5>
+            <img
+              src="../assets/images/learning1.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover"
+            />
+            <h5 class="card-title">Everyday Learning</h5>
             <p class="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               voluptatum voluptates. Quisquam, voluptatum voluptates.
@@ -25,7 +31,13 @@
       <div class="col-8 col-md-3 mt-3">
         <div class="card" style="border-radius: 20px; overflow: hidden">
           <div class="card-body">
-            <h5 class="card-title">Testimoni</h5>
+            <img
+              src="../assets/images/learning2.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover"
+            />
+            <h5 class="card-title">High Demand Profession</h5>
             <p class="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               voluptatum voluptates. Quisquam, voluptatum voluptates.
@@ -36,7 +48,13 @@
       <div class="col-8 col-md-3 mt-3">
         <div class="card" style="border-radius: 20px; overflow: hidden">
           <div class="card-body">
-            <h5 class="card-title">Testimoni</h5>
+            <h5 class="card-title">Remote Work</h5>
+            <img
+              src="../assets/images/learning3.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover"
+            />
             <p class="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               voluptatum voluptates. Quisquam, voluptatum voluptates.
@@ -47,7 +65,83 @@
       <div class="col-8 col-md-3 mt-3">
         <div class="card" style="border-radius: 20px; overflow: hidden">
           <div class="card-body">
-            <h5 class="card-title">Testimoni</h5>
+            <img
+              src="../assets/images/learning4.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover"
+            />
+            <h5 class="card-title">Competitive Pay</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptatum voluptates. Quisquam, voluptatum voluptates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 col-md-3 mt-3">
+        <div class="card" style="border-radius: 20px; overflow: hidden">
+          <div class="card-body">
+            <img
+              src="../assets/images/learning5.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover"
+            />
+            <h5 class="card-title">Entrepreneurship</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptatum voluptates. Quisquam, voluptatum voluptates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 col-md-3 mt-3">
+        <div class="card" style="border-radius: 20px; overflow: hidden">
+          <div class="card-body">
+            <img
+              src="../assets/images/learning6.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover"
+            />
+            <h5 class="card-title">Creative Outlet</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptatum voluptates. Quisquam, voluptatum voluptates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 col-md-3 mt-3">
+        <div class="card" style="border-radius: 20px; overflow: hidden">
+          <div class="card-body">
+            <img
+              src="../assets/images/learning7.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover"
+            />
+            <h5 class="card-title">
+              Web Development
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptatum voluptates. Quisquam, voluptatum voluptates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 col-md-3 mt-3">
+        <div class="card" style="border-radius: 20px; overflow: hidden">
+          <div class="card-body">
+            <img
+              src="../assets/images/learning8.png"
+              class="card-img-top"
+              alt="Learning"
+              style="width: 100px; height: 100px; object-fit: cover; background-color: white"
+            />
+            <h5 class="card-title">Stack on Demand</h5>
             <p class="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               voluptatum voluptates. Quisquam, voluptatum voluptates.

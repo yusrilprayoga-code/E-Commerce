@@ -50,7 +50,7 @@
 
         <!-- Button trigger modal Register -->
         <button
-          v-if="!isUserRegistered"
+          v-show="isUserLoggedIn === false"
           type="button"
           style="border: none; background-color: transparent; color: blue"
           data-bs-toggle="modal"
@@ -59,7 +59,7 @@
           Register
         </button>
 
-        <div v-else>
+        <!-- <div v-else>
           <button
             type="button"
             style="border: none; background-color: transparent; color: blue"
@@ -67,7 +67,7 @@
           >
             Logout
           </button>
-        </div>
+        </div> -->
 
         <!-- Modal login-->
         <div
@@ -213,6 +213,7 @@ export default {
     return {
       title: "Navbar",
       isUserLoggedIn: false,
+      isUserRegistered: false,
       loginUser: [
         {
           email: "dummy@gmail.com",
@@ -235,6 +236,23 @@ export default {
         alert("Login Failed");
       }
     },
+
+    // registerButton() {
+    //   //button disable
+    //   const email = document.getElementById("floatingInput").value;
+    //   const password = document.getElementById("floatingPassword").value;
+    //   const confirmPassword = document.getElementById("floatingConfirmPassword").value;
+
+    //   if (email === "" || password === "" || confirmPassword === "") {
+    //     alert("Please fill all the form");
+    //   } else if (password !== confirmPassword) {
+    //     alert("Password not match");
+    //   } else {
+    //     alert("Register Success");
+    //     this.$router.push("/");
+    //     this.isUserRegistered = true;
+    //   }
+    // }
 
     logoutButton() {
       alert("Logout Success");

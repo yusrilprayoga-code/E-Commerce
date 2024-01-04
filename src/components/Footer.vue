@@ -38,6 +38,18 @@
           </ul>
         </div>
       </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p>
+            <small>&copy; 2024 E-Commerce. All rights reserved.</small>
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <p class="text-end">
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>

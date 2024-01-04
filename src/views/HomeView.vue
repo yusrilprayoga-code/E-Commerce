@@ -1,7 +1,11 @@
 <template>
-  
-   <div class="hero-section container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1800">
+  <div class="hero-section container">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="1800"
+    >
       <div class="carousel-indicators">
         <button
           type="button"
@@ -24,15 +28,27 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner" style="border-radius: 20px;">
+      <div class="carousel-inner" style="border-radius: 20px">
         <div class="carousel-item active">
-          <img src="../assets/images/shop1.jpg" class="d-block" alt=" E-Commerce 1" />
+          <img
+            src="../assets/images/shop1.jpg"
+            class="d-block"
+            alt=" E-Commerce 1"
+          />
         </div>
         <div class="carousel-item">
-          <img src="../assets/images/shop2.jpg" class="d-block" alt=" E-Commerce 2" />
+          <img
+            src="../assets/images/shop2.jpg"
+            class="d-block"
+            alt=" E-Commerce 2"
+          />
         </div>
         <div class="carousel-item">
-          <img src="../assets/images/shop3.jpg" class="d-block" alt="E-Commerce 3" />
+          <img
+            src="../assets/images/shop3.jpg"
+            class="d-block"
+            alt="E-Commerce 3"
+          />
         </div>
       </div>
       <button
@@ -61,17 +77,39 @@
     <!-- testimonials -->
     <testimonials />
 
+    <!-- Hero Section -->
+    <div class="row align-items-center mt-3">
+      <div class="col mt-3">
+        <h4 class="text" style="text-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptatum voluptates.
+        </h4>
+        <p class="text" style="text-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptatum voluptates. Quisquam, voluptatum voluptates.
+        </p>
+      </div>
+      <div class="col mt-3">
+        <img
+          src="../assets/images/learning1.png"
+          class="card-img-top"
+          alt="Learning"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+    </div>
+
     <!-- Features -->
     <features />
   </div>
 </template>
 
 <script lang="ts">
-import Features from '@/components/Features.vue';
-import Sponsor from '@/components/Sponsor.vue';
-import Testimonials from '@/components/Testimonials.vue';
+import Features from "@/components/Features.vue";
+import Sponsor from "@/components/Sponsor.vue";
+import Testimonials from "@/components/Testimonials.vue";
 export default {
-  components: {  Features, Sponsor, Testimonials },
+  components: { Features, Sponsor, Testimonials },
   name: "HomeView",
 };
 </script>
@@ -85,5 +123,4 @@ img {
   width: 100%;
   object-fit: cover;
 }
-
 </style>
