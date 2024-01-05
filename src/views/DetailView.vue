@@ -1,20 +1,30 @@
 <template>
-  <div class="detail-view container">
-    <h1>Detail View</h1>
-    <div class="card">
-      <div class="card-body">
-        <img :src="product.thumbnail" alt="Product Image" />
-        <div class="card-title">
-          <h3>{{ product.title }}</h3>
+  <div class="detail-foods-category container-fluid">
+    <div class="container mt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item mt-3 mb-3">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li class="breadcrumb-item mt-3 mb-3" aria-current="page">
+            <router-link to="/products">Product</router-link>
+          </li>
+          <li class="breadcrumb-item mt-3 mb-3 active" aria-current="page">
+            {{ product.title }}
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Display the product details here -->
+      <div class="row flex-md-row">
+        <div class="col-md-6">
+          <img :src="product.thumbnail" alt="Product Image" class="img-fluid" />
         </div>
-        <div class="card-text">
-          <p>{{ product.description }}</p>
-        </div>
-        <div class="card-text">
-          <p>{{ product.price }}</p>
-        </div>
-        <div class="card-text">
-          <p>{{ product.category }}</p>
+        <div class="col-md-6">
+          <h2>{{ product.title || "Product Title" }}</h2>
+          <p>{{ product.description || "Product Description" }}</p>
+          <p>Price: {{ product.price || "Price" }}</p>
+          <!-- Add other product details as needed -->
         </div>
       </div>
     </div>
@@ -28,7 +38,7 @@ export default {
   props: ["productId"],
   data() {
     return {
-      product: {},
+      product: [],
     };
   },
   mounted() {
@@ -37,9 +47,7 @@ export default {
   methods: {
     async getProductDetails() {
       try {
-        const response = await axios.get(
-          `https://dummyjson.com/products/${this.productId}`
-        );
+        const response = await axios.get(`https://dummyjson.com/products/${this.productId}`);
         console.log(response.data);
         this.product = response.data;
       } catch (error) {

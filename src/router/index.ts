@@ -15,9 +15,10 @@ const routes: Array<RouteRecordRaw> = [
     component: ProductsVue
   },
   {
-    path: "/products/DetailView/:productId",
-    name: "DetailView",
-    component: DetailViewVue
+    path: '/products/DetailView/:productId',
+    name: 'DetailView',
+    component: DetailViewVue,
+    props: true,
   },
   {
     path: '/about',

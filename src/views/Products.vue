@@ -68,7 +68,7 @@ export default {
     },
 
     cardRouter(productId) {
-      this.$router.push({ name: "DetailView", params: { productId } });
+      this.$router.push(`/products/DetailView/${productId}`);
     },
   },
 };
