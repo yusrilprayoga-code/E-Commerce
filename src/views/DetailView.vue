@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="text-align: left;">
           <h2>{{ product.title || "Product Title" }}</h2>
           <p>{{ product.description || "Product Description" }}</p>
           <p>Price: {{ product.price || "Price" }}$</p>
