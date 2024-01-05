@@ -50,7 +50,12 @@
           >
             Logout
           </button>
+
+          <router-link class="nav-link" to="/cart">
+            <i class="fas fa-shopping-cart"></i>
+          </router-link>
         </div>
+        
 
         <!-- Button trigger modal Register -->
         <button

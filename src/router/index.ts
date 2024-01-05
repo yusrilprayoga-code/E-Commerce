@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ProductsVue from '@/views/Products.vue'
 import DetailViewVue from '@/views/DetailView.vue'
+import DetailView2Vue from '@/views/DetailView2.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,6 +19,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/products/DetailView/:productId',
     name: 'DetailView',
     component: DetailViewVue,
+    props: true,
+  },
+  {
+    path: '/products/DetailViews/:featureId',
+    name: 'DetailView2',
+    component: DetailView2Vue ,
     props: true,
   },
   {
