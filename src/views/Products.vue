@@ -1,6 +1,6 @@
 <template>
   <div class="products container">
-    <h1 class="text-center mb-5">This is a products page</h1>
+    <h1>Products</h1>
     <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
       <div class="col mt-3" v-for="product in products" :key="product.id">
         <div
@@ -25,6 +25,7 @@
         </div>
       </div>
     </div>
+    <button @click="viewAllProducts" class="btn btn-primary mt-5">Show More</button>
   </div>
 </template>
 
@@ -37,6 +38,7 @@ export default {
   data() {
     return {
       products: [],
+      category: ""
     };
   },
 
@@ -49,11 +51,24 @@ export default {
       try {
         const response = await axios.get("https://dummyjson.com/products");
         console.log(response.data);
-        this.products = response.data.products;
-        this.products = this.products.slice(0, 20);
+        this.products = response.data.products.slice(0, 8);
       } catch (error) {
         console.error(error);
       }
+    },
+
+    async viewAllProducts() {
+      try {
+        const response = await axios.get("https://dummyjson.com/products");
+        console.log(response.data);
+        this.products = response.data.products;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+
+    cardRouter(productId) {
+      this.$router.push({ name: "DetailView", params: { productId } });
     },
   },
 };
